@@ -1,3 +1,17 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "5.13.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {
+  }
+}
+
 module "resource_group_storage" {
   source                  = "Ivanovid777/resource-group-storage/azurerm"
   version                 = "1.0.0"
